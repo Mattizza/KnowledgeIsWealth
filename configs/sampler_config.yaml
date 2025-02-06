@@ -1,0 +1,24 @@
+initialization : 'lhs'
+solution : solution
+max_iter : 30
+domain_min : [0.0, 0.0]
+domain_max : [2.0, 2.0]
+ro : 1.0
+chi : 2.0
+gamma : 0.5
+sigma : 0.5
+weight_by_distance : True
+ratio_high_cosine : 0.1
+threshold : 501
+min_det : 0.0001
+max_det : 0.01
+avg_fitness_min : 20
+avg_fitness_max : 50
+sigma_noise_min : [0.1, 0.02]
+sigma_noise_max : [0.2, 0.04]
+max_init : 10
+pulse : True
+expanding_domain_factor : 0.5
+max_shrink : 2
+params : ['masscart', 'masspole']
+solution : [1.0, 0.1]

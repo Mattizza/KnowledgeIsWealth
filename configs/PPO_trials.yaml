@@ -1,0 +1,18 @@
+hyperparameters_ppo :
+  training_env : 'CartPole-v1'
+  validation_env : 'CartPole-v1'
+  verbose : 1
+  policy : 'MlpPolicy'
+  device : 'cpu'
+meta_wandb :
+  project : 'PPO_NM_test'
+  log_interval : 5
+  gradient_save_freq : 5
+meta_model :
+  total_timesteps : 80_000
+  eval_freq : 5_000
+  # udr_lowhigh :
+  #   - 0.20
+  #   - 0.20
+  #   - 0.20
+  vectorized : 8

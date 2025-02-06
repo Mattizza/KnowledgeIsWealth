@@ -1,0 +1,23 @@
+hyperparameters_sac :
+  policy : 'MlpPolicy'
+  gamma : 0.995
+  learning_rate : 0.0006
+  buffer_size : 1_000_000
+  batch_size : 512
+  ent_coef : 'auto'
+  train_freq : 1
+  target_update_interval : 1
+  gradient_steps : 1
+  verbose : 1
+meta_wandb :
+  project : 'SAC_NM_test'
+  log_interval : 10
+  gradient_save_freq : 10
+meta_model :
+  total_timesteps : 500_000
+  eval_freq : 5_000
+  udr_lowhigh :
+    - 0.20
+    - 0.20
+    - 0.20
+  vectorized : 16
